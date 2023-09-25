@@ -31,28 +31,40 @@
   system = {
     defaults = {
       NSGlobalDomain = {
+        AppleKeyboardUIMode = 3;
         InitialKeyRepeat = 15;
         KeyRepeat = 2;
-        # NSAutomaticCapitalizationEnabled = false;
-        # NSAutomaticDashSubstitutionEnabled = false;
-        # NSAutomaticPeriodSubstitutionEnabled = false;
-        # NSAutomaticQuoteSubstitutionEnabled = false;
-        # NSAutomaticSpellingCorrectionEnabled = false;
+        NSAutomaticCapitalizationEnabled = false;
+        NSAutomaticDashSubstitutionEnabled = false;
+        NSAutomaticPeriodSubstitutionEnabled = false;
+        NSAutomaticQuoteSubstitutionEnabled = false;
+        NSAutomaticSpellingCorrectionEnabled = false;
         NSNavPanelExpandedStateForSaveMode = true;
         NSNavPanelExpandedStateForSaveMode2 = true;
+        "com.apple.swipescrolldirection" = true;
+      };
+      LaunchServices = {
+        LSQuarantine = false;
       };
       dock = {
         autohide = true;
+        expose-group-by-app = true;
         orientation = "bottom";
-        # tilesize = 16;
+        tilesize = 64;
       };
       finder = {
         AppleShowAllExtensions = true;
         QuitMenuItem = true;
+        _FXShowPosixPathInTitle = true;
       };
       trackpad = {
-        TrackpadThreeFingerDrag = true;
         Clicking = true; 
+        TrackpadThreeFingerDrag = true;
+      };
+      CustomUserPreferences = {
+        "com.apple.dock" = {
+          showAppExposeGestureEnabled = true;
+        };
       };
     };
     keyboard = {
@@ -60,7 +72,6 @@
       remapCapsLockToEscape = true;
     };
   };
-  #  system.defaults.NSGlobalDomain.com.apple.swipescrolldirection = false;
 
   homebrew = {
     enable = true;
@@ -73,10 +84,25 @@
     brews = [ ];
 
     casks = [
+      "rectangle"
+      "obsidian"
       "google-chrome"
+      "discord"
+      "visual-studio-code"
+      "docker"
+      "balenaetcher"
+      "postman"
+      "openttd"
     ];
 
-    masApps = {};
+    masApps = {
+      pages = 409201541;
+      numbers = 409203825;
+      keynote = 409183694;
+      xcode = 497799835;
+      amphetamine = 937984704;
+      tailscale = 1475387142;
+    };
 
   };
 }

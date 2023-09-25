@@ -54,7 +54,6 @@
         };
         starship.enable = true;
         vim.enable = true;
-        vscode.enable = true;
       };
     };
     #extraSpecialArgs = { inherit machine; };
